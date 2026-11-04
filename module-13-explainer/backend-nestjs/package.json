@@ -1,0 +1,37 @@
+{
+  "name": "module-13-backend-nestjs",
+  "version": "1.0.0",
+  "description": "VibeProofLens Module 13 - AI Security Explainer & Fix Assistant NestJS Backend",
+  "scripts": {
+    "build": "nest build && npx tsc src/database/schema.ts --outDir dist/database --target ES2021 --module commonjs --skipLibCheck",
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main.js",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^3.0.3",
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/config": "^3.3.0",
+    "@nestjs/core": "^10.4.15",
+    "@nestjs/platform-express": "^10.4.15",
+    "@neondatabase/serverless": "^0.10.4",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.3",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.9",
+    "@nestjs/schematics": "^10.2.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.17.10",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.30.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
